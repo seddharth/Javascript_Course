@@ -89,3 +89,45 @@ function testNew(){
 }
 
 testNew()
+
+//function to calculate sum of even numbers
+function sumOfEvenNumbers(numbers){
+    let sum = 0;
+    for(let i = 0;i < numbers.length;i++){
+        if (numbers[i] % 2 === 0) {
+            sum += numbers[i];
+        }
+    }
+    return sum;
+}
+
+const numbersArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const result = sumOfEvenNumbers(numbersArray)
+console.log("sum of even numbers " + result)
+
+//Create a function that takes two numbers as input and returns their sum
+function addNumbers(a,b){
+    return a + b
+}
+
+const me= 10
+const ce= 30
+const value = addNumbers(me, ce)
+console.log('result is ' + value)
+
+//Create a function that takes a person's age as input and returns a message indicating whether they are eligible to vote or not
+function voteAge(age){
+    if (age >= 18){
+    return('can vote')
+    }
+    else{
+       return('cannot vote')
+    }
+}
+
+const d = 18
+const find = voteAge(d)
+console.log('person ' + find)
+
+
+    
